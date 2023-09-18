@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Mkdir results-dir
+      - name: Mkdir results-dir    ##this is a name
         # make sure results dir is created
         run: mkdir -p results-dir
       - name: Create config file
