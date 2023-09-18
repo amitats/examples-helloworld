@@ -14,7 +14,7 @@ jobs:
       - name: Mkdir results-dir
         # make sure results dir is created
         run: mkdir -p results-dir
-      - name: Create config file
+      - name: Create config file  ###giving a name
         # creating a heredoc config file
         run: |
           cat <<EOF >>kics.config
