@@ -49,7 +49,7 @@ locals {
   //tags = {
   //  Name = "${each.value.instance_name}"
   //}
-}
+//}
 
 output "instances" {
   value       = "${aws_instance.example_server}"
