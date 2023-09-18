@@ -1,9 +1,12 @@
 name: scan with KICS using config file
 
 on:
+  push:
+    branches:
+      - main # the name of your main branch
   pull_request:
-    branches: [master]
-
+    types: [opened, synchronize, reopened]
+    
 jobs:
   kics-job:
     runs-on: ubuntu-latest
